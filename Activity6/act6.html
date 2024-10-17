@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="act6Styles.css">
+  <title>Pokémon Gallery</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pokémon Starter Gallery</a>
+    <button class="btn btn-outline-secondary" onclick="changeMode()" type="submit">Mode</button>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Regions in Pokémon
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#kantoContainer">Kanto</a></li>
+        <li><a class="dropdown-item" href="#johtoContainer">Johto</a></li>
+        <li><a class="dropdown-item" href="#hoennContainer">Hoenn</a></li>
+        <li><a class="dropdown-item" href="#sinnohContainer">Sinnoh</a></li>
+        <li><a class="dropdown-item" href="#unovaContainer">Unova</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body id="body" data-bs-theme="light">
+  <div class="container">
+    <div class="row mt-5">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"
+        style="background-image: url('pictures/KantoR.png'); background-size: cover; background-position: center; height: 500px;">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="display-3">Starter Pokémons and Evolutions</h1>
+      </div>
+    </div>
+    <div class="row" id="kantoContainer">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"
+        style="background-image: url('pictures/JohtoR.png'); background-size: cover; background-position: center; height: 500px;">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="display-3">Starter Pokémons and Evolutions</h1>
+      </div>
+    </div>
+    <div class="row" id="johtoContainer">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"
+        style="background-image: url('pictures/HoennR.png'); background-size: cover; background-position: center; height: 500px;">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="display-3">Starter Pokémons and Evolutions</h1>
+      </div>
+    </div>
+    <div class="row" id="hoennContainer">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"
+        style="background-image: url('pictures/SinnohR.png'); background-size: cover; background-position: center; height: 500px;">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="display-3">Starter Pokémons and Evolutions</h1>
+      </div>
+    </div>
+    <div class="row" id="sinnohContainer">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"
+        style="background-image: url('pictures/UnovaR.png'); background-size: cover; background-position: center; height: 500px;">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="display-3">Starter Pokémons and Evolutions</h1>
+      </div>
+    </div>
+    <div class="row" id="unovaContainer">
+    </div>
+  </div>
+</body>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <h1 class="display-3">
+        WEBSITE INFO
+        <button type="button" onclick="expandContent()" class="btn btn-outline-secondary" id="btnExpand">Show</button>
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="footer" style="display: none;">
+  <div class="row">
+    <div class="col p-5" style="background-color: rgb(26, 57, 89);">
+      <p class="display-6 text-center" style="color: white">
+        Starter Pokémon: Gallery
+      </p>
+      <p class="display-9 text-center" style="color: white">
+        Starter Pokémon are the first companions you encounter on your journey in the Pokémon world. These special
+        creatures are offered to you by a wise professor at the beginning of your adventure, and they serve as your
+        introduction to the exciting world of Pokémon battles and exploration.
+
+        You'll be presented with three choices: a Grass-type, a Fire-type, and a Water-type Pokémon. Each type has its
+        own strengths and weaknesses, and your choice often depends on your personal preference or your understanding of
+        type matchups.
+
+        Your starter Pokémon will grow and evolve alongside you, becoming a powerful and loyal companion. They'll fight
+        by your side in battles, explore new regions, and even help you overcome challenges. The choice is yours! Each
+        starter Pokémon offers unique abilities and strengths, so choose the one that resonates with you the most and
+        embark on your Pokémon journey together.
+      </p>
+
+      <p class="display-7 text-center" style="color: white">
+        Github
+      </p>
+      <p class="display-9 text-center" style="color: white">
+        https://github.com/Whohann
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  var names = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise"];
+  var pics = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.png", "7.jpg", "8.jpg", "9.jpg",];
+  var nums = ["#0001", "#0002", "#0003", "#0004", "#0005", "#0006", "#0007", "#0008", "#0009"];
+  var type = ['Grass ' + '| Poison', "Grass " + "| Poison", "Grass" + " Poison", "Fire", "Fire", "Fire " + "| Flying", "Water", "Water", "Water"];
+
+  for (var i = 0; i < names.length; i++) {
+    var myContainer = document.getElementById("kantoContainer");
+    for (var i = 0; i < names.length; i++) {
+      var myContainer = document.getElementById("kantoContainer");
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"k" + i + "\" onmouseenter=\"addShadow('k" + i + "')\" onmouseleave=\"removeShadow('k" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+    }
+  }
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+
+  var colorMode = "light";
+  function changeMode() {
+    var bodyElement = document.getElementById("body");
+    colorMode = colorMode == "dark" ? "light" : "dark";
+    bodyElement.setAttribute("data-bs-theme", colorMode);
+  }
+</script>
+
+<script>
+  var names = ["Chikorita", "Bayleef", "Meganium", "Cyndaquil", "Quilava", "Typhlosion", "Totodile", "Croconaw", "Feraligatr"];
+  var pics = ["10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg",];
+  var nums = ["#0152", "#0153", "#0154", "#0155", "#0156", "#0157", "#0158", "#0159", "#0160"];
+  var type = ["Grass", "Grass", "Grass", "Fire", "Fire", "Fire", "Water", "Water", "Water"];
+
+  for (var i = 0; i < names.length; i++) {
+    var myContainer = document.getElementById("johtoContainer");
+    for (var i = 0; i < names.length; i++) {
+      var myContainer = document.getElementById("johtoContainer");
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"j" + i + "\" onmouseenter=\"addShadow('j" + i + "')\" onmouseleave=\"removeShadow('j" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+    }
+  }
+
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+
+  var display = "none";
+
+  function expandContent() {
+    var footer = document.getElementById("footer");
+    var btnExpand = document.getElementById("btnExpand");
+
+    if (display == "none") {
+      footer.style.display = "block";
+      display = "block";
+      btnExpand.innerHTML = "Hide";
+    } else {
+      footer.style.display = "none";
+      display = "none";
+      btnExpand.innerHTML = "Show";
+    }
+  }
+</script>
+
+<script>
+  var names = ["Treecko", "Grovyle", "Sceptile", "Torchic", "Combusken", "Blaziken", "Mudkip", "Marshtomp", "Swampert"];
+  var pics = ["19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg", "26.jpg", "27.jpg",];
+  var nums = ["#0252", "#0253", "#0254", "#0255", "#0256", "#0257", "#0258", "#0259", "#0260"];
+  var type = ["Grass", "Grass", "Grass", "Fire", "Fire " + "| Fighting", "Fire " + "| Fighting", "Water", "Water " + "| Ground", "Water " + "| Ground"];
+
+  for (var i = 0; i < names.length; i++) {
+    var myContainer = document.getElementById("hoennContainer");
+    for (var i = 0; i < names.length; i++) {
+      var myContainer = document.getElementById("hoennContainer");
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"h" + i + "\" onmouseenter=\"addShadow('h" + i + "')\" onmouseleave=\"removeShadow('h" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+    }
+  }
+
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+
+</script>
+
+<script>
+  var names = ["Turtwig", "Grotle", "Torterra", "Chimchar", "Monferno", "Infernape", "Piplup", "Prinplup", "Empoleon"];
+  var pics = ["28.jpg", "29.jpg", "30.jpg", "31.jpg", "32.jpg", "33.jpg", "34.jpg", "35.jpg", "36.jpg",];
+  var nums = ["#0387", "#0388", "#0389", "#0390", "#0391", "#0392", "#0393", "#0394", "#0395"];
+  var type = ["Grass", "Grass", "Grass" + "Ground", "Fire", "Fire " + "| Fighting", "Fire " + "| Fighting", "Water", "Water", "Water " + "| Metal"];
+
+  for (var i = 0; i < names.length; i++) {
+    var myContainer = document.getElementById("sinnohContainer");
+    for (var i = 0; i < names.length; i++) {
+      var myContainer = document.getElementById("sinnohContainer");
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"s" + i + "\" onmouseenter=\"addShadow('s" + i + "')\" onmouseleave=\"removeShadow('s" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+    }
+  }
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+</script>
+
+<script>
+  var names = ["Snivy", "Servine", "Serperior", "Tepig", "Pignite", "Emboar", "Oshawott", "Dewott", "Samurott"];
+  var pics = ["37.png", "38.png", "39.png", "40.png", "41.png", "42.png", "43.png", "44.png", "45.png",];
+  var nums = ["#0495", "#0496", "#0497", "#0498", "#0499", "#0500", "#0501", "#0502", "#0503"];
+  var type = ["Grass", "Grass", "Grass", "Fire", "Fire ", "Fire " + "| Fighting", "Water", "Water", "Water"];
+
+  for (var i = 0; i < names.length; i++) {
+    var myContainer = document.getElementById("unovaContainer");
+    for (var i = 0; i < names.length; i++) {
+      var myContainer = document.getElementById("unovaContainer");
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"u" + i + "\" onmouseenter=\"addShadow('u" + i + "')\" onmouseleave=\"removeShadow('u" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+    }
+  }
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+</script>
+
+</body>
+
+</html>
