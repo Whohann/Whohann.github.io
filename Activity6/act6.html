@@ -24,6 +24,7 @@
         <li><a class="dropdown-item" href="#johtoContainer">Johto</a></li>
         <li><a class="dropdown-item" href="#hoennContainer">Hoenn</a></li>
         <li><a class="dropdown-item" href="#sinnohContainer">Sinnoh</a></li>
+        <li><a class="dropdown-item" href="#unovaContainer">Unova</a></li>
       </ul>
     </div>
   </div>
@@ -113,6 +114,27 @@
     <div class="row" id="sinnohContainer">
     </div>
   </div>
+
+  <div class="container">
+    <div class="row mt-5">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"
+        style="background-image: url('pictures/UnovaR.png'); background-size: cover; background-position: center; height: 500px;">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="display-3">Starter Pokémons and Evolutions</h1>
+      </div>
+    </div>
+    <div class="row" id="unovaContainer">
+    </div>
+  </div>
 </body>
 
 <div class="container">
@@ -160,13 +182,13 @@
   var names = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise"];
   var pics = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.png", "7.jpg", "8.jpg", "9.jpg",];
   var nums = ["#0001", "#0002", "#0003", "#0004", "#0005", "#0006", "#0007", "#0008", "#0009"];
-  var type = ['Grass ' + 'Poison', "Grass" + " Poison", "Grass" + " Poison", "Fire", "Fire", "Fire " + "| Flying", "Water", "Water", "Water"];
+  var type = ['Grass ' + '| Poison', "Grass " + "| Poison", "Grass" + " Poison", "Fire", "Fire", "Fire " + "| Flying", "Water", "Water", "Water"];
 
   for (var i = 0; i < names.length; i++) {
     var myContainer = document.getElementById("kantoContainer");
     for (var i = 0; i < names.length; i++) {
       var myContainer = document.getElementById("kantoContainer");
-      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c" + i + "\" onmouseenter=\"addShadow('c" + i + "')\" onmouseleave=\"removeShadow('c" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"k" + i + "\" onmouseenter=\"addShadow('k" + i + "')\" onmouseleave=\"removeShadow('k" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
     }
   }
   function addShadow(id) {
@@ -194,9 +216,17 @@
     var myContainer = document.getElementById("johtoContainer");
     for (var i = 0; i < names.length; i++) {
       var myContainer = document.getElementById("johtoContainer");
-      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c" + i + "\" onmouseenter=\"addShadow('c" + i + "')\" onmouseleave=\"removeShadow('c" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"j" + i + "\" onmouseenter=\"addShadow('j" + i + "')\" onmouseleave=\"removeShadow('j" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
     }
   }
+
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+
   var display = "none";
 
   function expandContent() {
@@ -225,9 +255,17 @@
     var myContainer = document.getElementById("hoennContainer");
     for (var i = 0; i < names.length; i++) {
       var myContainer = document.getElementById("hoennContainer");
-      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c" + i + "\" onmouseenter=\"addShadow('c" + i + "')\" onmouseleave=\"removeShadow('c" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"h" + i + "\" onmouseenter=\"addShadow('h" + i + "')\" onmouseleave=\"removeShadow('h" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
     }
   }
+
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+
 </script>
 
 <script>
@@ -240,7 +278,7 @@
     var myContainer = document.getElementById("sinnohContainer");
     for (var i = 0; i < names.length; i++) {
       var myContainer = document.getElementById("sinnohContainer");
-      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c" + i + "\" onmouseenter=\"addShadow('c" + i + "')\" onmouseleave=\"removeShadow('c" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"s" + i + "\" onmouseenter=\"addShadow('s" + i + "')\" onmouseleave=\"removeShadow('s" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
     }
   }
   function addShadow(id) {
@@ -249,8 +287,30 @@
   function removeShadow(id) {
     document.getElementById(id).classList.remove("shadow");
   }
-
 </script>
+
+<script>
+  var names = ["Snivy", "Servine", "Serperior", "Tepig", "Pignite", "Emboar", "Oshawott", "Dewott", "Samurott"];
+  var pics = ["37.png", "38.png", "39.png", "40.png", "41.png", "42.png", "43.png", "44.png", "45.png",];
+  var nums = ["#0495", "#0496", "#0497", "#0498", "#0499", "#0500", "#0501", "#0502", "#0503"];
+  var type = ["Grass", "Grass", "Grass", "Fire", "Fire ", "Fire " + "| Fighting", "Water", "Water", "Water"];
+
+  for (var i = 0; i < names.length; i++) {
+    var myContainer = document.getElementById("unovaContainer");
+    for (var i = 0; i < names.length; i++) {
+      var myContainer = document.getElementById("unovaContainer");
+      myContainer.innerHTML += "<div class=\"col-xl-4 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"u" + i + "\" onmouseenter=\"addShadow('u" + i + "')\" onmouseleave=\"removeShadow('u" + i + "')\"><img src=\"pictures/" + pics[i] + "\" class=\"card-img-top\" onmouseover=\"this.classList.add('hover-effect'); this.nextElementSibling.classList.add('show');\" onmouseout=\"this.classList.remove('hover-effect'); this.nextElementSibling.classList.remove('show');\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">" + nums[i] + "<div class=\"message-container\">" + type[i];
+    }
+  }
+  function addShadow(id) {
+    document.getElementById(id).classList.add("shadow");
+  }
+  function removeShadow(id) {
+    document.getElementById(id).classList.remove("shadow");
+  }
+</script>
+
 </body>
 
+</html>
 </html>
