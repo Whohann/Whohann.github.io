@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samsung Galaxy A52</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Samsung Galaxy A52</h1>
+
+    <nav>
+        <div id="image-container">
+            <img class="slide active" src="1.webp" alt="Slide 1">
+            <img class="slide" src="2.png" alt="Slide 2">
+            <img class="slide" src="3.webp" alt="Slide 3">
+        </div>
+    </nav>
+    <section>
+        <header>Key Features</header>
+        <ul>
+            <li> 6.5-inch Super AMOLED display</li>
+            <li> Quad-camera setup (64MP main, 12MP ultrawide, 5MP macro, 5MP depth)</li>
+            <li> Qualcomm Snapdragon 720G processor</li>
+            <li> 4,500mAh battery with 25W fast charging</li>
+            <li> IP67 water and dust resistance</li>
+        </ul>
+        <header>Specifications</header>
+        <ul>
+            Galaxy A52 multi-lens camera system takes photos to the next level. Go ultra high-res on the 64MP Main
+            Camera
+            with OIS for crisp, clear photos throughout the day. Expand the viewing angle with Ultra Wide Camera.
+            Customise
+            focus with Depth Camera, or get closer to the details with Macro Camera.
+        </ul>
+    </section>
+
+    <header>Additional Features</header>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Specification</th>
+        </tr>
+        <tr>
+            <td>Operating System</td>
+            <td>Android 11 with One UI 3.1</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>6GB/8GB</td>
+        </tr>
+        <tr>
+            <td>Storage</td>
+            <td>128GB/256GB (expandable via microSD card)</td>
+        </tr>
+    </table>
+
+    <script>
+        var slides = document.getElementsByClassName("slide");
+        var currentSlide = 0;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove("active");
+
+            slides[n].classList.add("active");
+            currentSlide
+                = n;
+        }
+
+        setInterval(function () {
+            showSlide((currentSlide + 1) % slides.length);
+        }, 3000); 
+    </script>
+</body>
+
+</html>
