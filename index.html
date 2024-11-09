@@ -1,76 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johann's GitHub Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <style>
+     body {
+      transition: background-color 2s ease; 
+    }
+    .profileSection {
+        text-align: center;
+        margin-top: 30px;
+    }
 
-<head>
-    <title>Johann</title>
-    <link rel="stylesheet" href="stylesact3.css">
-</head>
+    .profilePicture {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 3px solid #ddd;
+    }
 
-<h1>Johann's GITHUB page</h1>
+    .bio h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+
+    .aboutMe {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .navbar {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+        margin-bottom: 20px;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .cardImgTop {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .activityCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .socialIcons a {
+      color: #000;
+      transition: color 0.3s;
+    }
+
+    .socialIcons a:hover {
+      color: #007bff;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s easeIn-out;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .cardImgTop {
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .cardTitle {
+      font-weight: bold;
+    }
+
+    .cardIframe {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
 
 <body>
-    <a href="Activity4/Johann Act 4.html">
-        <div class="container">
-            <img src="Chest.jpg" class="image">
-            <div class="overlay">
-                <div class="text">Activity 4</div>
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col-md-6">
+                    <h1 class="navbar-brand">Johann's GitHub Page</h1>
+                </div>
+                <div class="col-md-6 text-right"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="profileSection">
+            <img src="images/19_De Vera Johann Emmanuel B.jpg" alt="Johann's Profile Picture" class="profilePicture"/>
+            <div class="bio">
+                <h2>Johann Emmanuel B. De Vera</h2>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/realjohann19?mibextid=ZbWKwL" target="_blank">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/who_hann19/profilecard/?igsh=NXBtNDh3eWtjaW95" target="_blank">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="mailto:johanndevera555@gmail.com">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/Whohann" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="aboutMe">
+            <h2>About Me</h2>
+            <p>I'm a 3rd-year BSIT student.</p>
+            <p>I like Doggos and cats, Marvel fan, Music, Halloween, Horror.</p>
+            <p>Hobbies are Painting and Drawing, Reading, Playing Online Games, Watching Movies and Series.</p>
+        </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col d-flex align-items-center justify-content-center" style="background-color: rgb(14, 20, 75); height: 400px;">
+            <h1 class="text-white" style="font-size: 5rem;">Projects</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5" id="activity4Section">
+          <div class="col">
+            <h3 class="display-5">Activity4</h3>
+          </div>
+        </div>
+     </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <a href="Activity4/Johann Act 4.html">
+            <div class="card">
+              <iframe
+                src="Activity4/Johann Act 4.html"
+                class="cardIframe"
+                title="Embedded HTML Page"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="cardTitle">Click Here</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5" id="activity5Section">
+          <div class="col">
+            <h3 class="display-5">Activity5</h3>
+          </div>
+        </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <a href="Activity5/act5.html">
+            <div class="card">
+              <iframe
+                src="Activity5/act5.html"
+                class="cardIframe"
+                title="Embedded HTML Page"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="cardTitle">Click Here</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5" id="activity6Section">
+          <div class="col">
+            <h3 class="display-5">Activity6</h3>
+          </div>
+        </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <a href="Activity6/act6.html">
+            <div class="card">
+              <iframe
+                src="Activity6/act6.html"
+                class="cardIframe"
+                title="Embedded HTML Page"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="cardTitle">Click Here</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5" id="activity7Section">
+          <div class="col">
+            <h3 class="display-5">Activity7</h3>
+          </div>
+        </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <a href="Activity7/Act7.html">
+            <div class="card">
+              <iframe
+                src="Activity7/Act7.html"
+                class="cardIframe"
+                title="Embedded HTML Page"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="cardTitle">Click Here</h5>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
     </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const activityColors = {
+      activity4Section: "#ffffff", 
+      activity5Section: "#acddfc", 
+      activity6Section: "#acddfc", 
+      activity7Section: "#6ca2cc"  
+    };
 
-    <a href="Activity5/act5.html">
-        <div class="container">
-            <img src="Chest.jpg" class="image">
-            <div class="overlay">
-                <div class="text">Activity 5</div>
-    </a>
-    </div>
-    </div>
+    
+    Object.keys(activityColors).forEach(activityId => {
+      const activitySection = document.getElementById(activityId);
 
-    <a href="Activity6/act6.html">
-        <div class="container">
-            <img src="Chest.jpg" class="image">
-            <div class="overlay">
-                <div class="text">Activity 6</div>
-    </a>
-    </div>
-    </div>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.intersectionRatio === 1) {
+            document.body.style.backgroundColor = activityColors[activityId];
+          }
+        });
+      }, { threshold: 1.0 });
 
-    <a href="Activity7/Act7.html">
-        <div class="container">
-            <img src="Chest.jpg" class="image">
-            <div class="overlay">
-                <div class="text">Activity 7</div>
-    </a>
-    </div>
-    </div>
+      observer.observe(activitySection);
+    });
+  </script>
 </body>
-
-<style>
-
-    body {
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-        padding: 10px;
-        background-color: rgb(129, 190, 124);
-
-    }
-
-    h1 {
-        text-align: center;
-        color: #fffcfc;
-        background-color: #156426;
-        background-size: 20px;
-        border-radius: 20px;
-        top: 10px;
-        left: 380px;
-    }
-
-    img {
-        width: auto;
-        height: auto;
-    }
-</style>
-
-
 </html>
