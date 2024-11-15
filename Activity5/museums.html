@@ -1,32 +1,105 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <header>
-        <title>Museums</title>
-        <link rel="stylesheet" href="act5Styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </header>
-    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museums</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+    }
 
-<body>
-    <img src="2.jpg">
-    <div class="h2">
-        <div class="center">
-            <h2>Museums</h2>
-        </div>
+    h1,
+    h2,
+    h3 {
+        color: #003b57;
+    }
+
+    h2 {
+        color: #005b87;
+    }
+
+    h3 {
+        color: #0077a8;
+    }
+
+    .bgContainer {
+        background-color: #d3eefc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        background-color: #005b87;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        background-color: #003b57;
+    }
+
+    footer {
+        background-color: #005b87;
+        color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .card {
+        border: 2px solid #d3eefc;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border-color: #005b87;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    a {
+        color: #005b87;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #003b57;
+    }
+</style>
+
+<body style="background-color: #f8f9fa; font-family: Arial, sans-serif;">
+
+    <div class="container-fluid text-center text-white py-5"
+        style="background: url('images/2.jpg') center center / cover no-repeat; height: 500px;">
     </div>
-    </div>
-    <div>
-        <h3>Morris Thompson Cultural and Visitors Center</h3>
-        <p>To discover more about Alaska Native culture in Fairbanks, spend some time in the Morris Thompson Cultural
+
+
+    <div class="container my-5">
+
+        <h3 class="text-primary">Morris Thompson Cultural and Visitors Center</h3>
+        <p>
+            To discover more about Alaska Native culture in Fairbanks, spend some time in the Morris Thompson Cultural
             and Visitors Center. The center has a variety of films, talks, and exhibits that document the history of
             different communities, and showcase their contributions to life in the city in modern times. The center also
             houses the Alaska Public Lands Information Center, including world-class exhibits of Alaska’s four seasons
             and stunning displays of Alaska Native art. Admission is free and the center is open year-round.
         </p>
-        <h3>University of Alaska Museum of the North</h3>
-        <p>The University of Alaska Museum of the North is a must-see attraction for Fairbanks first-timers. The museum
+
+
+        <h3 class="text-primary">University of Alaska Museum of the North</h3>
+        <p>
+            The University of Alaska Museum of the North is a must-see attraction for Fairbanks first-timers. The museum
             showcases stories from people and places in Alaska, has award-winning exhibitions, and a souvenir shop
             bursting with special local treats. Be sure to stop by The Place Where You Go To Listen exhibit – a sound
             and light display driven by the real-time position of the moon and sun. The museum is home to the Gallery of
@@ -35,22 +108,34 @@
             miners. In the museum theater, special programs are shown throughout the day, including an amazing
             multimedia presentation on the northern lights.
         </p>
-        <h3>Fountainhead Antique Auto Museum</h3>
-        <p>Motorheads rejoice, this auto museum is home to several one-of-a-kind vintage cars. Visitors can browse the
+
+
+        <h3 class="text-primary">Fountainhead Antique Auto Museum</h3>
+        <p>
+            Motorheads rejoice, this auto museum is home to several one-of-a-kind vintage cars. Visitors can browse the
             display models, taking in the stylish fashion of the mannequins, and learning about the automobile’s
             (literal) journey over the years. Children under 5 can enter the museum for free.
         </p>
-        <div>
-            <img src="m2.jpg" class="imgfluid">
+
+
+        <div class="text-center my-4">
+            <img src="images/m2.jpg" class="img-fluid rounded shadow" alt="Museum Image">
         </div>
     </div>
-    <div>
-        <a target="_blank" href="act5.html">
-            <div class="center">
-                <button class="button">Back to Homepage></button>
-        </a>
+
+
+    <div class="text-center mb-5">
+        <a href="act5.html" class="btn btn-primary btn-lg">Back to Homepage</a>
     </div>
-    </div>
+
+
+    <footer class="text-center bg-primary text-white py-3">
+        <p>&copy; 2024 Museums of Fairbanks</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

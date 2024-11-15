@@ -1,64 +1,161 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor Activities</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+    }
 
-<head>
-    <header>
-        <title>Outdoor Activities</title>
-        <link rel="stylesheet" href="act5Styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </header>
-    </header>
+    h1,
+    h2,
+    h3 {
+        color: #003b57;
+    }
 
-<body>
-    <img src="3.jpg">
-    <div class="h2">
-        <div class="center">
-            <h2>Outdoor Activities</h2>
-        </div>
-    </div>
-    </div>
-    <div>
-        <h3>Winter Activities</h3>
-        <p>Fairbanks makes it one of the best places on earth to see the captivating light of
-            the aurora borealis, but that's not all there is to do in winter. Skiing, ice skating, snowshoeing, ice
-            fishing, tubing, and dog sledding abound. To get out into the backcountry, outfitters offer guided
-            snowmobile tours in the Fairbanks area and Chena River State Recreation Area.
-        </p>
-        <p>Fairbanks has a ski trail systems, with many trails groomed for classic and skate skiing
-            and lit for night skiing, including Birch Hill Recreation Area and trails around the University Alaska
-            Fairbanks. The Nordic Ski Club of Fairbanks stages ski races and other cross-country events throughout the
-            year.
-        </p>
-        <p>Dog sledding is a popular sport in Fairbanks, home of the Yukon Quest International Sled Dog
-            Race. Within the area are almost a dozen sled dog kennels that offer guided tours and the opportunity for
-            visitors to mush and work with their own team for a day or more. Also available are dog sled rides,
-            multi-day expeditions, and mushing schools.
-        </p>
-        <h3>CHENA HOT SPRINGS RESORT</h3>
-        <p>About 55 miles outside of town is Chena Hot Springs Resort, where visitors can soak in the soothing hot
-            springs pools. Chena Hot Springs is a must-do activity for visitors to Fairbanks, whether you have a few
-            hours or a couple days to spend here. The year-round resort features indoor and outdoor thermal pools and
-            accommodations (lodge, cabins, and camping) with a focus on renewable energy and sustainability. If that
-            wasn't enough, they offer a wide range of summer and winter tours including dog sledding, ATV tours, river
-            trips, horseback riding, and more. There's nothing quite like watching the northern lights dance above you
-            while soaking in a natural hot spring on a dark winter night.
-            <div>
-                <img src="hotSpring.jpeg" class="imgfluid">
-            </div>
-        </p>
-        <h3>FISHING</h3>
-        <p>Charter fishing tour operators based in Fairbanks offer a wide range of adventures for visiting anglers.
-            Outings include both guided charters on rivers and fly-in adventures to remote lakes, and ice fishing in
-            winter. Species targeted include king salmon, northern pike, char, lake trout, and Arctic grayling.
-        </p>
-    </div>
-    <div>
-        <a target="_blank" href="act5.html">
-            <div class="center">
-                <button class="button">Back to Homepage></button>
-        </a>
-    </div>
-    </div>
-</body>
+    h2 {
+        color: #005b87;
+    }
 
+    h3 {
+        color: #0077a8;
+    }
+
+    .bgContainer {
+        background-color: #d3eefc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        background-color: #005b87;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        background-color: #003b57;
+    }
+
+    footer {
+        background-color: #005b87;
+        color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .card {
+        border: 2px solid #d3eefc;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border-color: #005b87;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    a {
+        color: #005b87;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #003b57;
+    }
+</style>
+  <body style="background-color: #f8f9fa; font-family: Arial, sans-serif">
+    <div
+      class="container-fluid text-center text-white py-5"
+      style="
+        background: url('images/3.jpg') center center / cover no-repeat;
+        height: 500px;
+      "
+    ></div>
+
+    <div class="container my-5">
+      <h3>Winter Activities</h3>
+      <p>
+        Fairbanks makes it one of the best places on earth to see the
+        captivating light of the aurora borealis, but that's not all there is to
+        do in winter. Skiing, ice skating, snowshoeing, ice fishing, tubing, and
+        dog sledding abound. To get out into the backcountry, outfitters offer
+        guided snowmobile tours in the Fairbanks area and Chena River State
+        Recreation Area.
+      </p>
+      <p>
+        Fairbanks has a ski trail systems, with many trails groomed for classic
+        and skate skiing and lit for night skiing, including Birch Hill
+        Recreation Area and trails around the University of Alaska Fairbanks.
+        The Nordic Ski Club of Fairbanks stages ski races and other
+        cross-country events throughout the year.
+      </p>
+      <p>
+        Dog sledding is a popular sport in Fairbanks, home of the Yukon Quest
+        International Sled Dog Race. Within the area are almost a dozen sled dog
+        kennels that offer guided tours and the opportunity for visitors to mush
+        and work with their own team for a day or more. Also available are dog
+        sled rides, multi-day expeditions, and mushing schools.
+      </p>
+
+      <h3>Chena Hot Springs Resort</h3>
+      <p>
+        About 55 miles outside of town is Chena Hot Springs Resort, where
+        visitors can soak in the soothing hot springs pools. Chena Hot Springs
+        is a must-do activity for visitors to Fairbanks, whether you have a few
+        hours or a couple of days to spend here. The year-round resort features
+        indoor and outdoor thermal pools and accommodations (lodge, cabins, and
+        camping) with a focus on renewable energy and sustainability.
+      </p>
+      <p>
+        If that wasn't enough, they offer a wide range of summer and winter
+        tours including dog sledding, ATV tours, river trips, horseback riding,
+        and more. There's nothing quite like watching the northern lights dance
+        above you while soaking in a natural hot spring on a dark winter night.
+      </p>
+      <div class="text-center my-4">
+        <img
+          src="images/hotSpring.jpeg"
+          class="img-fluid rounded shadow"
+          alt="Chena Hot Springs"
+        />
+      </div>
+
+      <h3>Fishing</h3>
+      <p>
+        Charter fishing tour operators based in Fairbanks offer a wide range of
+        adventures for visiting anglers. Outings include both guided charters on
+        rivers and fly-in adventures to remote lakes, and ice fishing in winter.
+        Species targeted include king salmon, northern pike, char, lake trout,
+        and Arctic grayling.
+      </p>
+    </div>
+
+    <div class="text-center mb-5">
+      <a href="act5.html" class="btn btn-primary btn-lg">Back to Homepage</a>
+    </div>
+
+    <footer class="text-center bg-primary text-white py-3">
+      <p>&copy; 2024 Outdoor Activities Guide</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,185 +1,221 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <header>
-    <title>Northern Lights in Alaska</title>
-    <link rel="stylesheet" href="act5Styles.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Lights in Fairbanks, Alaska</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
 
-</header>
+        h1,
+        h2,
+        h3 {
+            color: #003b57;
+        }
+
+        h2 {
+            color: #005b87;
+        }
+
+        h3 {
+            color: #0077a8;
+        }
+
+        .bgContainer {
+            background-color: #d3eefc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .bgContainer.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn {
+            background-color: #005b87;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            background-color: #003b57;
+        }
+
+        footer {
+            background-color: #005b87;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .card {
+            border: 2px solid #d3eefc;
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        a {
+            color: #005b87;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #003b57;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Northern Lights in Fairbanks, Alaska</h1>
-    <div class="bgContainer">
-        <img src="bgfairbanks.jpg">
-        <div class="center">
-            <div class="bgCenter">
+    <div class="container-fluid text-center text-white py-5"
+        style="background: url('images/bgfairbanks.jpg') center center / cover no-repeat; height: 500px;">
+    </div>
+
+    <div class="container my-5">
+        <div class="bgContainer p-4">
+            <h3>About Fairbanks</h3>
+            <p>Fairbanks, Alaska, is one of the best places on earth to see the northern lights, also known as the
+                aurora borealis. Visitors come to enjoy this spectacular natural display and partake in winter
+                activities like snowmobiling, dog mushing, and skiing.</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h3>The Science</h3>
+        <p>The northern lights occur when electrically charged particles from the sun collide with Earth’s atmosphere.
+            These collisions produce colorful lights, primarily green, but also red and purple hues, which can be seen
+            in the auroral oval above the geomagnetic north.</p>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center">Things to Do in Fairbanks</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="view.html">
+                        <img src="images/viewNorthernlights.webp" class="card-img-top" alt="Northern Lights">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">View the Northern Lights</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="museums.html">
+                        <img src="images/Museum.jpg" class="card-img-top" alt="Museums">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Visit Museums</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="viewActivities.html">
+                        <img src="images/activites.jpg" class="card-img-top" alt="Outdoor Activities">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Outdoor Activities</p>
+                    </div>
+                </div>
             </div>
         </div>
-</div>
-    <div class="h2">
-        <div class="center">
-            <h2>Fairbanks</h2>
-        </div>
-    </div>
-    <div class="h3">
-        <div class="center">
-        </div>
-    </div>
-    <div class="p"></div>
-    <div>
-        <h3>About Fairbanks</h3>
-
-        <p>Alaska is one of the best places on earth to see the northern lights, also known as the aurora borealis
-            colorful bands of light that dance in the dark night sky. Travelers from all over the world come to Alaska
-            to see this stunning display and take advantage of other winter experiences like snowmobiling, dog mushing,
-            skiing, festivals, and sporting events.
-        </p>
-        <p>At 65 degrees north latitude, Fairbanks is renowned for the northern lights, also known as the aurora
-            borealis, the midnight sun, and sunsets and sunrises that last forever. Basecamp to Denali National Park &
-            Preserve,
-            the Interior, and the Arctic — Fairbanks is the Golden Heart of Alaska. Home to just over 100,000 hearty
-            souls,
-            the Fairbanks region is the second-largest population center in Alaska.
-        </p>
-        <p>Locals embrace the natural world and have created a vibrant river city in the far north. Where else can you
-            travel to such a remote locale and still enjoy all the amenities of a charming downtown, a thriving arts
-            community, rich Alaska Native culture, authentic Alaska activities and attractions, and endless
-            opportunities
-            for exploration?
-        </p>
-    </div>
-    </div>
-    <div>
-        <h3>The Science</h3>
     </div>
 
-    </div>
-    <div>
-        <p>So, what are the northern lights, exactly? The northern lights, also known as aurora borealis, occur about 60
-            or 70 miles above the earth’s surface about 10 times higher than a jet aircraft flies and can extend
-            hundreds of miles into space. Electrically charged particles traveling through the earth’s magnetosphere
-            collide with gasses, creating energy in the form of light. The intensity of solar flares varies the
-            intensity and extent of activity within the Auroral oval, the ring-like area above the geomagnetic north
-            where auroral activity is concentrated. The most common color displayed is a brilliant green, but the aurora
-            borealis can also produce red and purple patterns.
-        </p>
+    <div class="container my-5">
+        <h2>Best Time to Visit Fairbanks</h2>
+        <p>Fairbanks offers unique experiences year-round. Summer brings long daylight hours and warm temperatures,
+            while winter is the peak time to view the aurora borealis. Fall and spring offer fewer crowds and moderate
+            weather.</p>
     </div>
 
-    <div class="h2">
-        <div class="center">
-            <h2>Things to Do in Fairbanks</h2>
+    <div class="container my-5">
+        <h2>Lodging in Fairbanks</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Downtown</h3>
+                <p>Stay close to museums, restaurants, and the Chena River with plenty of options from luxury hotels to
+                    family apartments.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Airport Area</h3>
+                <p>Convenient accommodations near the airport range from budget-friendly hotels to riverfront
+                    properties.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Out of Town</h3>
+                <p>For a serene escape, opt for cabins, lodges, or B&Bs in remote areas, perfect for aurora viewing away
+                    from city lights.</p>
+            </div>
         </div>
     </div>
 
-    <div class="galleryContainer">
-        <div class="gallery">
-            <a href="view.html">
-                <img src="viewNorthernlights.webp">
-            </a>
-            <div class="desc">View the Northern Lights</div>
+    <div class="container my-5 text-center">
+        <h2>Maps</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe 
+                class="embed-responsive-item" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12736.345619309694!2d-147.7512567252051!3d64.83784541616445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x51327159c5b395db%3A0x6af391d893ecbf0!2sFairbanks%2C%20AK%2C%20USA!5e0!3m2!1sen!2s!4v1699810135876!5m2!1sen!2s" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-        <div class="gallery">
+        <p>Find Fairbanks on the interactive map</p>
+    </div>
 
-            <a href="museums.html">
-                <img src="Museum.jpg" alt="MUSEUMS" width="800" height="600">
-            </a>
-            <div class="desc">Visit Museums</div>
-        </div>
-        <div class="gallery">
-            <a href="viewActivities.html">
-                <img src="activites.jpg" alt="Outdoor Activities" width="800" height="600">
-            </a>
-            <div class="desc">Outdoor Activities</div>
-        </div>
-    </div>
-    <div class="h2">
-        <div class="center">
-            <h2>Best Time to Visit Fairbanks</h2>
-        </div>
-    </div>
-    <div>
-        <p>If you’re looking for daylight and warm temps, the best time to visit is June through August, when summer is
-            in full swing. Temperatures can get up into the 80s and it doesn’t get completely dark for 70 days straight,
-            from May 17 – July 27. Keep in mind that July to August is peak visitor season in the city and accommodation
-            prices can be more expensive.
+    <footer class="text-center mt-5 py-3">
+        <p>&copy; 2024 Northern Lights in Fairbanks</p>
+    </footer>
 
-            For a less busy and more affordable visit, the shoulder seasons are equally great in Fairbanks. Fall brings
-            crisp and bright days with temperatures falling to the 40s, and seeing the changing colors is well worth the
-            extra layers. The cooler weather makes hiking more comfortable, and the darker skies mark the start of the
-            northern lights viewing season.
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            The winter months from December to March are the peak times to see the northern lights. The days can get as
-            cold as -30 degrees and snowfall can be heavy. Accommodation prices increase slightly in winter due to the
-            influx of northern lights seekers and the many winter festivals that the city hosts, but they typically
-            don’t exceed the prices for summer.
-        </p>
-    </div>
-    <div>
-        <img src="fairbanks1.jpg" class="imgfluid">
-    </div>
-    </div>
-    <div>
-        <div class="center">
-            <h2>Lodging in Fairbanks</h2>
-        </div>
-    </div>
-    <div>
-        <p>From large hotels to cozy cabins, there's a wide variety of places to stay in Fairbanks. Several national and
-            locally owned hotels and lodges can be found in town, some featuring riverfront views of the Chena River. If
-            you're interested in connecting with locals, book one of the many bed & breakfasts for cozy accommodations
-            both in and outside of town. Cabins can be rented in town and in remote areas for a true Alaska experience.
-            Prefer to camp? Fairbanks is home to several campground and RV parks.
+    <script>
+        
+        const elements = document.querySelectorAll('.bgContainer, .card');
+        const checkVisibility = () => {
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        };
 
-            Visitors to Fairbanks are spoiled with choices when it comes to finding somewhere to stay. Whether you’re
-            looking for a cozy hideout in nature, a chic hotel downtown, or a one-of-a-kind accommodation experience,
-            Fairbanks has it all. Below are just a few of the best areas for lodging in the city.
-        </p>
-    </div>
-    <div>
-        <h3>Downtown</h3>
-    </div>
-    <div>
-        <p>For travelers looking to be close to all the action, downtown is where you want to stay. The vibrant zone is
-            packed with museums and restaurants and is close to the Chena River, which boasts beautiful views across the
-            water. Downtown has many accommodation types, including luxury hotels, family apartments, and tiny homes.
-            Properties are available to suit all budget types.
-        </p>
-    </div>
-    <div>
-        <h3>Airport Area</h3>
-    </div>
-    <div>
-        <p>You’ll find a variety of lodging near the airport, from budget options to riverfront hotels overlooking the
-            Chena River. These properties are just a few miles from downtown and are close to grocery stores and
-            restaurants.</p>
-    </div>
-    <h3>Out of Town</h3>
-    </div>
-    <div>
-        <p>For those looking for some peace and quiet with a side of adventure, Fairbanks is home to an array of
-            accommodations located outside of town, ranging from high-end luxury lodges to cabins build specifically for
-            northern lights viewing to cozy family-run B&Bs and guesthouses. Away from the ambient city light, staying
-            at these accommodations gives you even better chances of seeing the aurora borealis. </p>
-    </div>
-    <div>
-        <div class="center">
-            <h2>Maps</h2>
-        </div>
-    </div>
-    <div>
-        <div class="galleryContainer">
-            <a target="_blank"
-                href="https://www.google.com/maps/place/Fairbanks,+AK,+USA/@64.8283644,-147.6690026,12z/data=!3m1!4b1!4m6!3m5!1s0x5132454f67fd65a9:0xb3d805e009fef73a!8m2!3d64.8400511!4d-147.7199757!16zL20vMHFmNXA?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
-                <div class="gallery">
-                    <img src="map.png">
-            </a>
-            <div class="desc">Fairbanks in Google Maps</div>
-        </div>
-    </div>
-    </div>
-    </div>
+        checkVisibility();
+
+    
+        window.addEventListener('scroll', checkVisibility);
+    </script>
 </body>
 
 </html>

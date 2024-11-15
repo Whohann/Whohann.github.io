@@ -1,54 +1,144 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northern Lights</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+    }
 
-<head>
-    <header>
-        <title>Northern Lights</title>
-        <link rel="stylesheet" href="act5Styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </header>
-    </header>
+    h1,
+    h2,
+    h3 {
+        color: #003b57;
+    }
 
-<body>
-    <img src="1.jpg">
-    <div class="h2">
-        <div class="center">
-            <h2>View the NORTHERN LIGHTS</h2>
-        </div>
-    </div>
-    </div>
-    <div>
-        <p>From mid-August through mid-April, Fairbanks is one of the best places to view the northern lights in Alaska
-            due to its location, hours of darkness in the winter, and auroral activity. While the northern lights can be
-            seen from anywhere in town, the best opportunities for northern lights viewing happen away from the city's
-            ambient light. Join a guided tour to let the locals take you to the best spots for northern lights viewing.
-            For a more immersive experience, book a multi-day northern lights package, which will include northern
-            lights viewing excursions, meals, and overnight stays at unique, remote lodging options
-            specifically-designed for northern lights viewing.
-        </p>
-        <p>Likewise, dwellings in the Fairbanks area have been built with the express purpose of aurora viewing in mind.
-            Including picturesque lodges and log cabins, remote yurts, well-appointed viewing spaces and posh igloos.
-            Many Fairbanks accommodations will give patrons a “wake-up” call when the aurora appears. Also, local
-            entrepreneurs have crafted a multitude of exciting ways travelers can simultaneously see the lights and
-            enjoy quintessentially Alaskan activities. In our charmed Aurora City you can combine late-night dog
-            mushing, snowmachining, ice fishing, flightseeing and more with aurora viewing.
-        </p>
-        <p> Also, local
-            entrepreneurs have crafted a multitude of exciting ways travelers can simultaneously see the lights and
-            enjoy quintessentially Alaskan activities. In our charmed Aurora City you can combine late-night dog
-            mushing, snowmachining, ice fishing, flightseeing and more with aurora viewing.
-        </p>
-        <div>
-            <img src="aurora.png" class="imgfluid">
-        </div>
-    </div>
-    <div>
-    <a target="_blank" href="act5.html">
-        <div class="center">
-        <button class="button">Back to Homepage></button> 
-    </a>
-    </div>
-    </div>
-</body>
+    h2 {
+        color: #005b87;
+    }
 
+    h3 {
+        color: #0077a8;
+    }
+
+    .bgContainer {
+        background-color: #d3eefc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        background-color: #005b87;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        background-color: #003b57;
+    }
+
+    footer {
+        background-color: #005b87;
+        color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .card {
+        border: 2px solid #d3eefc;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border-color: #005b87;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    a {
+        color: #005b87;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #003b57;
+    }
+</style>
+  <body style="background-color: #f8f9fa; font-family: Arial, sans-serif">
+    <div
+      class="container-fluid text-center text-white py-5"
+      style="
+        background: url('images/1.jpg') center center / cover no-repeat;
+        height: 500px;
+      "
+    ></div>
+
+    <div class="container my-5">
+      <p>
+        From mid-August through mid-April, Fairbanks is one of the best places
+        to view the northern lights in Alaska due to its location, hours of
+        darkness in the winter, and auroral activity. While the northern lights
+        can be seen from anywhere in town, the best opportunities for northern
+        lights viewing happen away from the city's ambient light. Join a guided
+        tour to let the locals take you to the best spots for northern lights
+        viewing. For a more immersive experience, book a multi-day northern
+        lights package, which will include northern lights viewing excursions,
+        meals, and overnight stays at unique, remote lodging options
+        specifically-designed for northern lights viewing.
+      </p>
+      <p>
+        Likewise, dwellings in the Fairbanks area have been built with the
+        express purpose of aurora viewing in mind. Including picturesque lodges
+        and log cabins, remote yurts, well-appointed viewing spaces and posh
+        igloos. Many Fairbanks accommodations will give patrons a “wake-up” call
+        when the aurora appears. Also, local entrepreneurs have crafted a
+        multitude of exciting ways travelers can simultaneously see the lights
+        and enjoy quintessentially Alaskan activities. In our charmed Aurora
+        City you can combine late-night dog mushing, snowmachining, ice fishing,
+        flightseeing and more with aurora viewing.
+      </p>
+      <p>
+        Local entrepreneurs have crafted a multitude of exciting ways travelers
+        can simultaneously see the lights and enjoy quintessentially Alaskan
+        activities. In our charmed Aurora City you can combine late-night dog
+        mushing, snowmachining, ice fishing, flightseeing, and more with aurora
+        viewing.
+      </p>
+
+      <div class="text-center my-4">
+        <img
+          src="images/aurora.png"
+          class="img-fluid rounded shadow"
+          alt="Aurora Borealis"
+        />
+      </div>
+    </div>
+
+    <div class="text-center mb-5">
+      <a href="act5.html" class="btn btn-primary btn-lg">Back to Homepage</a>
+    </div>
+
+    <footer class="text-center bg-primary text-white py-3">
+      <p>&copy; 2024 Northern Lights Guide</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
