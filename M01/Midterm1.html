@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formula 1</title>
+    <link rel="icon" href="images/2418779.png" type="image/png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: -10%;
+        bottom: -10%;
+      }
+
+      #norris {
+        transform: translateX(100%) scale(1);
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        opacity: 0;
+      }
+
+      #norris.visible {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+      }
+
+      #leclerc {
+        transform: translateX(-100%);
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        opacity: 0;
+      }
+
+      #leclerc.visible {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      #max {
+        transform: translateX(100%) scale(1);
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        opacity: 0;
+      }
+
+      #max.visible {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+      }
+
+      .img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+
+  <body data-bs-theme="dark" style="background-color: rgb(0, 0, 0)">
+    <nav
+      class="navbar navbar-expand-lg"
+      style="
+        background-color: #000;
+        color: #fff;
+        border-bottom: 1px solid #000000;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <img
+            src="images/formula-1-logo-1-1.png"
+            alt="Formula 1"
+            style="height: 40px"
+          />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="color: #fff"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: #fff"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="container-fluid p-0"
+      style="
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        padding-top: -10%;
+      "
+    >
+      <div class="row">
+        <div class="col-md-6">
+          <iframe
+            src="https://www.youtube.com/embed/mdnF9R-Bzpg?autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1&cc_load_policy=0&start=16&playlist=mdnF9R-Bzpg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.3);
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="norris"
+      class="container-fluid"
+      style="
+        background: linear-gradient(
+          to left,
+          rgba(211, 102, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        );
+      "
+    >
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 700px"
+      >
+        <div
+          class="col-12 col-sm-6 col-md-6 d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="images/lannor01.avif"
+            alt="Lando Norris"
+            class="img-fluid"
+            style="object-fit: cover; width: 700px; max-height: auto"
+          />
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-6 d-flex justify-content-center align-items-center"
+        >
+          <h3
+            class="text-white typewriter"
+            style="
+              font-size: 5vw;
+              position: relative;
+              z-index: 1;
+              font-family: 'Russo One', sans-serif;
+              color: #ff6600;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              text-shadow: 0 0 10px #ff6600, 0 0 10px #ff6600;
+              overflow: hidden;
+              white-space: nowrap;
+            "
+          >
+            Lando Norris
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="leclerc"
+      class="container-fluid"
+      style="
+        background: linear-gradient(
+          to right,
+          rgba(138, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        );
+      "
+    >
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 700px"
+      >
+        <div
+          class="col-12 col-sm-6 col-md-6 d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="images/chalec01.avif"
+            alt="Charles Leclerc"
+            class="img-fluid"
+            style="object-fit: cover; width: 700px; max-height: auto"
+          />
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-6 d-flex justify-content-center align-items-center"
+        >
+          <h3
+            class="text-white typewriter"
+            style="
+              font-size: 5vw;
+              position: relative;
+              z-index: 1;
+              font-family: 'Russo One', sans-serif;
+              color: #ff0000;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              text-shadow: 0 0 10px #ff0000, 0 0 10px #ff0000;
+              overflow: hidden;
+              white-space: nowrap;
+            "
+          >
+            Charles Leclerc
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="max"
+      class="container-fluid"
+      style="
+        background: linear-gradient(
+          to left,
+          rgba(0, 37, 138, 0.7),
+          rgba(0, 0, 0, 0.3)
+        );
+      "
+    >
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 700px"
+      >
+        <div
+          class="col-12 col-sm-6 col-md-6 d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="images/maxver01.avif"
+            alt="Max Verstappen"
+            class="img-fluid"
+            style="object-fit: cover; width: 700px; max-height: auto"
+          />
+        </div>
+        <div
+          class="col-12 col-sm-6 col-md-6 d-flex justify-content-center align-items-center"
+        >
+          <h3
+            class="text-white typewriter"
+            style="
+              font-size: 5vw;
+              position: relative;
+              z-index: 1;
+              font-family: 'Russo One', sans-serif;
+              color: #0059ff;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              text-shadow: 0 0 10px #0059ff, 0 0 10px #0059ff;
+              overflow: hidden;
+              white-space: nowrap;
+            "
+          >
+            Max Verstappen
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+          <div class="col">
+            <h1 class="display-3">
+              Learn more?
+              <button
+                type="button"
+                onclick="expandContent()"
+                class="btn btn-outline-secondary"
+                id="btnExpand"
+              >
+                Show
+              </button>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="footer" style="display: none">
+        <div class="row">
+          <div class="col p-5" style="background-color: rgb(42, 57, 71)">
+            <div class="text-center">
+                <h3 style="color: white">Explore Formula 1</h3>
+                <p>
+                  <a href="https://www.formula1.com/" target="_blank" style="color: white; text-decoration: none;">
+                    Click here to visit the official Formula 1 website
+                  </a>
+                </p>
+              </div>
+        
+              <p class="display-7 text-center" style="color: white">Github</p>
+              <p class="display-9 text-center" style="color: white">
+                https://github.com/Whohann
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const norrisContainer = document.getElementById("norris");
+        const leclercContainer = document.getElementById("leclerc");
+        const maxContainer = document.getElementById("max");
+        const norrisRect = norrisContainer.getBoundingClientRect();
+        if (norrisRect.top <= window.innerHeight && norrisRect.bottom >= 0) {
+          norrisContainer.classList.add("visible");
+        } else {
+          norrisContainer.classList.remove("visible");
+        }
+        const leclercRect = leclercContainer.getBoundingClientRect();
+        if (leclercRect.top <= window.innerHeight && leclercRect.bottom >= 0) {
+          leclercContainer.classList.add("visible");
+        } else {
+          leclercContainer.classList.remove("visible");
+        }
+        const maxRect = leclercContainer.getBoundingClientRect();
+        if (maxRect.top <= window.innerHeight && maxRect.bottom >= 0) {
+          maxContainer.classList.add("visible");
+        } else {
+          maxContainer.classList.remove("visible");
+        }
+      });
+
+      var display = "none";
+      function expandContent() {
+        var footer = document.getElementById("footer");
+        var btnExpand = document.getElementById("btnExpand");
+
+        if (display == "none") {
+          footer.style.display = "block";
+          display = "block";
+          btnExpand.innerHTML = "Hide";
+        } else {
+          footer.style.display = "none";
+          display = "none";
+          btnExpand.innerHTML = "Show";
+        }
+      }
+    </script>
+  </body>
+</html>
