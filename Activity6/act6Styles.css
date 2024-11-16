@@ -1,18 +1,38 @@
 .card-img-top.hover-effect {
-    transform: scale(1.1); /* Zoom in slightly */
-    
-    
+  transform: scale(1.1);
+}
+
+.hover-effect {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 .message-container {
-    background-color: rgb(194, 194, 194);
-    color: rgb(0, 0, 0);
-    padding: 10px;
+  display: none;
+}
+.show {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.message-container {
+  background-color: rgb(194, 194, 194);
+  color: rgb(0, 0, 0);
+  padding: 10px;
 }
 
 .message-container.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .p {
-  font-size: medium ;
+  font-size: medium;
+}
+.footer {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.footer.show {
+  display: block;
+  opacity: 1;
 }

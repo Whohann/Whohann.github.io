@@ -32,14 +32,8 @@
         width: 100%;
       }
 
-      .card {
-        text-align: center;
-        max-width: 300px;
-      }
-
       .charactername {
         font-weight: bold;
-        font-size: 25px;
         font-size: 1rem;
         line-height: 1.5;
         margin-bottom: 0.5rem;
@@ -49,12 +43,8 @@
         text-decoration: none;
       }
 
-      .house {
-        font-size: 18px;
-      }
-
       .pageItem {
-        background-color: #732e2e; 
+        background-color: #732e2e;
         color: aliceblue;
         border: none;
         border-radius: 5px;
@@ -66,11 +56,13 @@
       .pageItem:hover {
         background-color: #993d3d;
       }
+
       .pagelink {
         color: white;
       }
+
       .navbar {
-        font-family: "Bitter", serif; 
+        font-family: "Bitter", serif;
         font-weight: bold;
       }
     </style>
@@ -85,7 +77,12 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col">
-          <h1 class="display-3">Characters</h1>
+          <h1 class="display-3 text-white">Characters</h1>
+        </div>
+      </div>
+      <div id="loadingSpinner" style="display: none; text-align: center">
+        <div class="spinner-border text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
         </div>
       </div>
       <div class="row" id="cardContainer"></div>
@@ -113,24 +110,36 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      document.body.style.backgroundImage = "url('images/house.png')";
+      document.body.style.backgroundImage =
+        "url('images/house.png'), url('https://via.placeholder.com/1920x1080')";
       document.body.style.backgroundColor = "#3d2b1f";
       document.body.style.backgroundSize = "cover";
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundPosition = "center";
-      const urlParams = new URLSearchParams(window.location.search);
-      const characterId = urlParams.get("characterID");
+
       const cardContainer = document.getElementById("cardContainer");
+      const loadingSpinner = document.getElementById("loadingSpinner");
       let characters = [];
       let currentPage = 1;
       const charactersPerPage = 6;
+
+      const houseColors = {
+        Gryffindor: "#740001",
+        Slytherin: "#2a623d",
+        Ravenclaw: "#222f5b",
+        Hufflepuff: "#ecb939",
+      };
+
       const loadCharacters = async () => {
+        loadingSpinner.style.display = "block";
         const urlToFetch = "https://hp-api.onrender.com/api/characters";
 
         try {
           const response = await fetch(urlToFetch);
           if (!response.ok) throw new Error("Network response was not ok");
-          const characters = await response.json();
+
+          characters = await response.json();
+          const totalPages = Math.ceil(characters.length / charactersPerPage);
 
           const startIndex = (currentPage - 1) * charactersPerPage;
           const endIndex = startIndex + charactersPerPage;
@@ -139,45 +148,47 @@
           cardContainer.innerHTML = "";
 
           paginatedCharacters.forEach((characterHogwarts) => {
+            const cardColor = houseColors[characterHogwarts.house] || "#7b4b1e";
             const cardContent = `
-                <div class="col-3 col-sm-6 col-md-3 col-lg-4">
-                    <a href="view.html?id=${characterHogwarts.id}">
-                        <div class="card rounded-5 my-3">
-                            <div class="imgcontainer">
-                                <img src="${
-                                  characterHogwarts.image ||
-                                  "https://via.placeholder.com/150"
-                                }" alt="Character Image">
-                            </div>
-                            <div class="charactername">${
-                              characterHogwarts.name
-                            }</div>
-                        </div>
-                    </a>
-                </div>
-            `;
+  <div class="col-sm-4 col-md-6 col-lg-4">
+    <a href="view.html?id=${characterHogwarts.id}">
+      <div class="card rounded-5 my-3" style="border-color: ${cardColor}">
+        <div class="imgcontainer">
+          <img src="${
+            characterHogwarts.image || "https://via.placeholder.com/150"
+          }" alt="${characterHogwarts.name || "Character Image"}">
+        </div>
+        <div class="charactername">${characterHogwarts.name}</div>
+      </div>
+    </a>
+  </div>
+`;
             cardContainer.innerHTML += cardContent;
           });
         } catch (error) {
-          console.error(
-            "There has been a problem with your fetch operation:",
-            error
-          );
+          console.error("Error fetching characters:", error);
+          cardContainer.innerHTML = `<div class="text-white">Failed to load characters.</div>`;
+        } finally {
+          loadingSpinner.style.display = "none";
         }
       };
 
-      loadCharacters();
-      function nextPage(page) {
-        currentPage++;
-        loadCharacters(currentPage);
+      function nextPage() {
+        const totalPages = Math.ceil(characters.length / charactersPerPage);
+        if (currentPage < totalPages) {
+          currentPage++;
+          loadCharacters();
+        }
       }
 
       function prevPage() {
         if (currentPage > 1) {
           currentPage--;
-          loadCharacters(currentPage);
+          loadCharacters();
         }
       }
+
+      loadCharacters();
     </script>
   </body>
 </html>
