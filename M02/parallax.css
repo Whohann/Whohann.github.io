@@ -14,6 +14,7 @@
 	background-repeat: repeat-x;
 	width: 100%;
 	position: absolute;
+	
 }
 
 .keyart_layer.parallax {
@@ -62,6 +63,7 @@
 
 #keyart-8 {
 	background-image: url(images/parallax7.png);
+
 }
 
 #keyart-scrim {
