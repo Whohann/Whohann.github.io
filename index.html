@@ -121,6 +121,17 @@
     text-decoration: none;
   }
 
+  .customHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: start;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+
   @media (max-width: 768px) {
     .navbar h1 {
       font-size: 2rem;
@@ -135,11 +146,28 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <div class="row w-100">
-        <div class="col-md-6">
-          <h1 class="navbar-brand">Johann's GitHub Page</h1>
-        </div>
-        <div class="col-md-6 text-right"></div>
+      <a class="navbar-brand" href="#">Johann's GitHub Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/realjohann19?mibextid=ZbWKwL"
+              target="_blank">Facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/who_hann19/profilecard/?igsh=NXBtNDh3eWtjaW95"
+              target="_blank">Instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:johanndevera555@gmail.com">Email</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Whohann" target="_blank">GitHub</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -173,95 +201,97 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col d-flex align-items-center justify-content-center"
+      <div class="col-12 d-flex align-items-center justify-content-center"
         style="position: relative; height: 400px; overflow: hidden;">
         <video autoplay muted loop
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
           <source src="images/activityBG.mp4" type="video/mp4">
         </video>
         <h1 class="text-white typewriter" id="projectsTitle"
-          style="font-size: 5rem; position: relative; z-index: 1;  font-family: 'Orbitron', sans-serif; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 10px rgb(129, 233, 252), 0 0 40px rgb(104, 207, 248);">
-          Projects</h1>
+          style="font-size: 3rem; position: relative; z-index: 1; font-family: 'Orbitron', sans-serif; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 10px rgb(129, 233, 252), 0 0 40px rgb(104, 207, 248);">
+          Projects
+        </h1>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-5" id="activity4Section">
-        <div class="col">
-          <h3 class="display-5">Activity4</h3>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5" id="activity4Section">
+      <div class="col">
+        <h5 class="display-5 customHeading">Activity 4</h5>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <a href="Activity4/Johann Act 4.html">
-            <div class="card">
-              <iframe src="Activity4/Johann Act 4.html" class="cardIframe" title="Embedded HTML Page"></iframe>
-              <div class="card-body">
-                <h5 class="cardTitle">Click Here</h5>
-              </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <a href="Activity4/Johann Act 4.html">
+          <div class="card">
+            <iframe src="Activity4/Johann Act 4.html" class="cardIframe" title="Embedded HTML Page"></iframe>
+            <div class="card-body">
+              <h5 class="cardTitle">Click Here</h5>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-5" id="activity5Section">
-        <div class="col">
-          <h3 class="display-5">Activity5</h3>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5" id="activity5Section">
+      <div class="col">
+        <h5 class="display-5 customHeading">Activity 5</h5>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <a href="Activity5/act5.html">
-            <div class="card">
-              <iframe src="Activity5/act5.html" class="cardIframe" title="Embedded HTML Page"></iframe>
-              <div class="card-body">
-                <h5 class="cardTitle">Click Here</h5>
-              </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <a href="Activity5/act5.html">
+          <div class="card">
+            <iframe src="Activity5/act5.html" class="cardIframe" title="Embedded HTML Page"></iframe>
+            <div class="card-body">
+              <h5 class="cardTitle">Click Here</h5>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-5" id="activity6Section">
-        <div class="col">
-          <h3 class="display-5">Activity6</h3>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5" id="activity6Section">
+      <div class="col">
+        <h5 class="display-5 customHeading">Activity 6</h5>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <a href="Activity6/act6.html">
-            <div class="card">
-              <iframe src="Activity6/act6.html" class="cardIframe" title="Embedded HTML Page"></iframe>
-              <div class="card-body">
-                <h5 class="cardTitle">Click Here</h5>
-              </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <a href="Activity6/act6.html">
+          <div class="card">
+            <iframe src="Activity6/act6.html" class="cardIframe" title="Embedded HTML Page"></iframe>
+            <div class="card-body">
+              <h5 class="cardTitle">Click Here</h5>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-5" id="activity7Section">
-        <div class="col">
-          <h3 class="display-5">Activity7</h3>
-        </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5" id="activity7Section">
+      <div class="col">
+        <h5 class="display-5 customHeading">Activity 7</h5>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <a href="Activity7/Act7.html">
-            <div class="card">
-              <iframe src="Activity7/Act7.html" class="cardIframe" title="Embedded HTML Page"></iframe>
-              <div class="card-body">
-                <h5 class="cardTitle">Click Here</h5>
-              </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <a href="Activity7/Act7.html">
+          <div class="card">
+            <iframe src="Activity7/Act7.html" class="cardIframe" title="Embedded HTML Page"></iframe>
+            <div class="card-body">
+              <h5 class="cardTitle">Click Here</h5>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
+  </div>
   </div>
   <div class="container-fluid" id="midterms">
     <div class="row">
@@ -272,7 +302,7 @@
           <source src="images/midtermBG.mp4" type="video/mp4">
         </video>
         <h1 class="text-white typewriter" id="projectsTitle"
-          style="font-size: 5rem; position: relative; z-index: 1;  font-family: 'Orbitron', sans-serif; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 10px rgb(252, 137, 129), 0 0 40px rgb(252, 137, 129);">
+          style="font-size: 3rem; position: relative; z-index: 1;  font-family: 'Orbitron', sans-serif; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 10px rgb(252, 137, 129), 0 0 40px rgb(252, 137, 129);">
           Midterms</h1>
       </div>
     </div>
@@ -281,7 +311,7 @@
   <div class="container">
     <div class="row mt-5" id="midterm1Section">
       <div class="col">
-        <h3 class="display-5">Part 1</h3>
+        <h5 class="display-5 customHeading">Part 1</h5>
       </div>
     </div>
     <div class="row mt-5">
@@ -300,7 +330,7 @@
   <div class="container">
     <div class="row mt-5" id="midterm2Section">
       <div class="col">
-        <h3 class="display-5">Part 2</h3>
+        <h5 class="display-5 customHeading">Part 2</h5>
       </div>
     </div>
     <div class="row mt-5">
