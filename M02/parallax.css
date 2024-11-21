@@ -1,6 +1,6 @@
 .keyart,
 .keyart_layer {
-	height: 1000px;
+	height: 1038px;
 }
 
 .keyart {
@@ -34,7 +34,7 @@
 
 #keyart-1 {
 	background-image: url(images/parallax1.png);
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #keyart-2 {
@@ -59,11 +59,6 @@
 
 #keyart-7 {
 	background-image: url(images/parallax7.png);
-}
-
-#keyart-8 {
-	background-image: url(images/parallax7.png);
-
 }
 
 #keyart-scrim {
