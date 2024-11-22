@@ -52,6 +52,12 @@
 #keyart-5 {
 	background-image: url(images/parallax5.png);
 }
+@media (max-width: 768px) {
+    #keyart-5 {
+        height: 70vh; 
+        background-size: cover; 
+    }
+}
 
 #keyart-6 {
 	background-image: url(images/parallax6.png);
